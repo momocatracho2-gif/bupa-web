@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planes ISAPRE Cruz Blanca | Claudia Fica · Bupa Seguros</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Lora:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Plus Jakarta Sans',sans-serif;color:#1C2B3A;background:#fff}
+
+/* ── TOP BAR ── */
+.topbar{background:#003087;padding:9px 0;font-size:.79rem;color:rgba(255,255,255,.85)}.topbar-in{max-width:1240px;margin:0 auto;padding:0 28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}.topbar a{color:#fff;text-decoration:none}.topbar a:hover{text-decoration:underline}.t-r{display:flex;gap:20px}
+
+/* ── NAV ── */
+nav{background:#fff;border-bottom:1.5px solid #EBF0F7;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,80,150,.07)}.nav-in{max-width:1240px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;height:72px}.logo-a{display:flex;align-items:center;gap:14px;text-decoration:none}.logo-a img{height:38px}.sep{width:1px;height:28px;background:#D0DCE8}.logo-sub{font-size:.72rem;color:#4E6070;line-height:1.3}.logo-sub strong{display:block;font-size:.8rem;color:#003087;font-weight:700}.nav-back{display:inline-flex;align-items:center;gap:8px;color:#0072CE;text-decoration:none;font-size:.85rem;font-weight:600;padding:9px 16px;border-radius:8px;border:1.5px solid #DDE6EF;transition:all .2s}.nav-back:hover{background:#FDF8F3}
+
+/* ── HERO ── */
+.hero{background:linear-gradient(135deg,#002060 0%,#003087 50%,#004db3 100%);padding:64px 0 0;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-60px;right:-80px;width:400px;height:400px;background:radial-gradient(circle,rgba(0,163,173,.18) 0%,transparent 70%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:5px;background:linear-gradient(90deg,#FFD700,#D4894A,#00A3AD)}
+.hero-in{max-width:1240px;margin:0 auto;padding:0 28px 56px;display:grid;grid-template-columns:1fr 300px;gap:48px;align-items:end}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,215,0,.2);border:1px solid rgba(255,215,0,.4);color:#FFD700;border-radius:50px;padding:5px 16px;font-size:.72rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:16px}
+h1{font-family:'Lora',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);color:#fff;line-height:1.15;margin-bottom:14px}.hero-sub{color:rgba(255,255,255,.76);font-size:.97rem;line-height:1.7;margin-bottom:24px}
+.btn-wa{display:inline-flex;align-items:center;gap:9px;background:#25D366;color:#fff;text-decoration:none;font-weight:700;padding:13px 26px;border-radius:50px;font-size:.9rem;box-shadow:0 4px 20px rgba(37,211,102,.35);transition:all .25s}.btn-wa:hover{transform:translateY(-2px)}
+.hero-badge{background:rgba(255,255,255,.1);border:1px solid rgba(255,215,0,.3);border-radius:14px;padding:22px 24px}.hb-label{font-size:.7rem;color:rgba(255,255,255,.65);text-transform:uppercase;letter-spacing:.07em;display:block;margin-bottom:12px}.hb-items{display:flex;flex-direction:column;gap:8px}.hb-item{display:flex;align-items:center;gap:9px;font-size:.82rem;color:#fff}.hb-dot{width:8px;height:8px;border-radius:50%;background:#FFD700;flex-shrink:0}
+
+/* ── SECTIONS ── */
+section{padding:64px 0}.container{max-width:1240px;margin:0 auto;padding:0 28px}.sec-lbl{font-size:.71rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#00A3AD;margin-bottom:10px}h2{font-family:'Lora',serif;font-size:clamp(1.5rem,2.5vw,2.1rem);color:#003087;line-height:1.2;margin-bottom:12px}.sec-desc{color:#4E6070;font-size:.95rem;line-height:1.7;max-width:680px}
+
+/* ── QUÉ ES ISAPRE ── */
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:36px;align-items:start}
+.intro-box{background:#F5F8FF;border-radius:14px;padding:28px 30px;border-left:4px solid #003087}
+.intro-box h3{font-size:1rem;font-weight:700;color:#003087;margin-bottom:10px}
+.intro-box p{font-size:.88rem;color:#4E6070;line-height:1.7}
+.intro-box.accent{background:#FFF8EC;border-left-color:#FFD700}
+.intro-box.accent h3{color:#8B5E0A}
+.fonasa-vs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:36px}
+.fv-card{border-radius:12px;padding:20px 22px;border:1.5px solid #EBF0F7}
+.fv-card.fonasa{background:#F0FFF8;border-color:#A8E6C8}.fv-card.isapre{background:#EEF4FF;border-color:#B8CEFF}
+.fv-title{font-weight:700;font-size:.88rem;margin-bottom:12px}.fv-card.fonasa .fv-title{color:#1A7A4A}.fv-card.isapre .fv-title{color:#003087}
+.fv-list{list-style:none;padding:0}.fv-list li{font-size:.82rem;color:#4E6070;padding:4px 0 4px 18px;position:relative;line-height:1.5}.fv-list li::before{position:absolute;left:0}
+.fv-card.fonasa .fv-list li::before{content:"✓";color:#1A7A4A}.fv-card.isapre .fv-list li::before{content:"✓";color:#003087}
+
+
+
+/* ── PERFILES DE COBERTURA ── */
+.perfiles-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:36px}
+.perfil-card{border-radius:16px;border:1.5px solid #EBF0F7;overflow:hidden;box-shadow:0 3px 14px rgba(0,48,135,.07);transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+.perfil-card:hover{transform:translateY(-4px);box-shadow:0 10px 32px rgba(0,48,135,.13)}
+.perfil-head{padding:24px 22px 20px}
+.perfil-head.azul{background:linear-gradient(135deg,#002060,#003087)}
+.perfil-head.teal{background:linear-gradient(135deg,#007A84,#00A3AD)}
+.perfil-head.dorado{background:linear-gradient(135deg,#7A5800,#B88400)}
+.perfil-emoji{font-size:1.8rem;display:block;margin-bottom:10px}
+.perfil-nombre{font-family:'Lora',serif;font-size:1.25rem;font-weight:600;color:#fff;line-height:1.2;margin-bottom:4px}
+.perfil-para{font-size:.74rem;color:rgba(255,255,255,.7);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.perfil-body{padding:20px 22px;flex:1;display:flex;flex-direction:column;gap:0}
+.perfil-feature{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid #F0F4F8;font-size:.83rem;color:#4E6070;line-height:1.5}
+.perfil-feature:last-of-type{border:none}
+.perfil-feature::before{content:"✓";color:#00A3AD;font-weight:800;flex-shrink:0;font-size:.85rem;margin-top:1px}
+.perfil-nota{font-size:.75rem;color:#8B6914;background:#FFF8EC;border:1px solid #F5D78E;border-radius:8px;padding:8px 12px;margin-top:12px;line-height:1.5}
+.btn-perfil{display:block;margin:16px 22px 20px;text-align:center;background:#003087;color:#fff;text-decoration:none;font-weight:700;font-size:.84rem;padding:11px;border-radius:9px;transition:background .2s}
+.btn-perfil:hover{background:#002060}
+
+/* ── TIPOS DE PLAN ── */
+.tipos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:28px}
+.tipo-card{background:#fff;border-radius:12px;padding:20px;border:1.5px solid #EBF0F7;box-shadow:0 2px 8px rgba(0,48,135,.05)}
+.tipo-icon{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:12px}
+.tipo-icon.azul{background:#EEF4FF}.tipo-icon.teal{background:#E6F8FA}.tipo-icon.dorado{background:#FFF8EC}
+.tipo-title{font-weight:700;color:#003087;font-size:.9rem;margin-bottom:6px}
+.tipo-desc{font-size:.81rem;color:#4E6070;line-height:1.6}
+
+/* ── BENEFICIOS RED BUPA ── */
+.beneficio-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:28px}
+.ben-card{background:#fff;border-radius:12px;padding:18px;border:1.5px solid #EBF0F7;box-shadow:0 2px 8px rgba(0,48,135,.05)}
+.ben-title{font-weight:700;color:#003087;font-size:.88rem;margin-bottom:6px}
+.ben-desc{font-size:.81rem;color:#4E6070;line-height:1.6}
+
+/* ── AVISO IMPORTANTE ── */
+.aviso{background:#FFF8EC;border:1.5px solid #F5D78E;border-radius:14px;padding:20px 24px;margin-top:32px}
+.aviso h4{color:#8B5E0A;font-size:.88rem;font-weight:700;margin-bottom:8px}
+.aviso p{font-size:.83rem;color:#6B4C10;line-height:1.6}
+
+/* ── CÓMO CONTRATAR ── */
+.pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-top:32px;counter-reset:paso}
+.paso{background:#fff;border-radius:12px;padding:20px;border:1.5px solid #EBF0F7;position:relative;padding-top:52px}
+.paso::before{counter-increment:paso;content:counter(paso);position:absolute;top:16px;left:20px;width:28px;height:28px;background:#003087;color:#fff;border-radius:50%;font-size:.82rem;font-weight:800;display:flex;align-items:center;justify-content:center}
+.paso h4{font-size:.9rem;font-weight:700;color:#003087;margin-bottom:6px}
+.paso p{font-size:.81rem;color:#4E6070;line-height:1.6}
+
+/* ── FAQ ── */
+.faq-list{margin-top:28px;border-radius:12px;overflow:hidden;border:1.5px solid #EBF0F7}
+.faq-item{border-bottom:1px solid #EBF0F7}.faq-item:last-child{border:none}
+.faq-q{padding:16px 20px;font-weight:700;font-size:.88rem;color:#003087;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;background:#fff;transition:background .15s}
+.faq-q:hover{background:#F5F8FF}
+.faq-icon{font-size:1.1rem;color:#00A3AD;flex-shrink:0;transition:transform .25s}
+.faq-a{display:none;padding:0 20px 16px;font-size:.84rem;color:#4E6070;line-height:1.7;background:#fff}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-item.open .faq-a{display:block}
+
+/* ── CTA FINAL ── */
+.cta-final{background:linear-gradient(135deg,#002060 0%,#003087 60%,#004db3 100%);padding:72px 0;text-align:center}
+.cta-final h2{font-family:'Lora',serif;color:#fff;font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:14px}
+.cta-final p{color:rgba(255,255,255,.76);font-size:.97rem;line-height:1.7;max-width:580px;margin:0 auto 32px}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn-email{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;border:2px solid rgba(255,255,255,.5);text-decoration:none;font-weight:700;padding:13px 24px;border-radius:50px;font-size:.9rem;transition:all .25s}
+.btn-email:hover{background:rgba(255,255,255,.1);border-color:#fff}
+
+/* ── FOOTER ── */
+footer{background:#001440;padding:28px 0}.fbot{max-width:1240px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer img{height:28px;opacity:.7}
+.fcopy{font-size:.75rem;color:rgba(255,255,255,.45);line-height:1.5}
+
+/* ── RESPONSIVE ── */
+@media(max-width:780px){
+  .hero-in{grid-template-columns:1fr;gap:28px}
+  .hero-badge{display:none}
+  .intro-grid,.fonasa-vs{grid-template-columns:1fr}
+  .cta-btns{flex-direction:column;align-items:center}
+  .fbot{justify-content:center;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-in">
+    <span>📍 Atención en todo Chile · Asesoría 100% online y presencial</span>
+    <div class="t-r">
+      <a href="tel:+56998747180">📞 +56 9 9874 7180</a>
+      <a href="mailto:claudia.fica@bupa.cl">✉ claudia.fica@bupa.cl</a>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-in">
+    <a class="logo-a" href="#">
+      <img src="data:image/png;base64,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" alt="Cruz Blanca · Parte de Bupa" style="height:38px">
+      <div class="sep"></div>
+      <div class="logo-sub">
+        <strong>Claudia Fica Acosta</strong>
+        Asesora Comercial Multiproducto
+      </div>
+    </a>
+    <a class="nav-back" href="index.html">← Volver al inicio</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-in">
+    <div>
+      <div class="hero-tag">🏥 ISAPRE Cruz Blanca · Respaldo Bupa</div>
+      <h1>Planes de Salud<br>ISAPRE Cruz Blanca</h1>
+      <p class="hero-sub">Cruz Blanca es la ISAPRE del grupo Bupa en Chile: más de 700 mil afiliados, red Bupa preferente y estándares internacionales de salud. Cotiza el plan que mejor se ajuste a tu cotización del 7% sin costo adicional.</p>
+      <a href="https://wa.me/56998747180?text=Hola%20Claudia%2C%20me%20interesa%20cotizar%20un%20plan%20ISAPRE%20Cruz%20Blanca" target="_blank" class="btn-wa">
+        <svg viewBox="0 0 24 24" style="width:19px;height:19px;fill:#fff;flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Cotizar mi plan ahora
+      </a>
+    </div>
+    <div class="hero-badge">
+      <span class="hb-label">¿Por qué Cruz Blanca + Bupa?</span>
+      <div class="hb-items">
+        <div class="hb-item"><div class="hb-dot"></div>Más de 700 mil afiliados en Chile</div>
+        <div class="hb-item"><div class="hb-dot"></div>75 años de experiencia del grupo Bupa</div>
+        <div class="hb-item"><div class="hb-dot"></div>Red Bupa: clínicas y centros IntegraMédica</div>
+        <div class="hb-item"><div class="hb-dot"></div>Bono Costo Cero en exámenes</div>
+        <div class="hb-item"><div class="hb-dot"></div>Planes ajustados a tu 7% legal</div>
+        <div class="hb-item"><div class="hb-dot"></div>Cobertura GES garantizada</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECCIÓN 1: QUÉ ES UNA ISAPRE -->
+<section>
+  <div class="container">
+    <div class="sec-lbl">¿Qué es una ISAPRE?</div>
+    <h2>Tu cotización del 7% puede hacer mucho más</h2>
+    <p class="sec-desc">En Chile, todo trabajador destina el 7% de su renta imponible a salud. Si estás en FONASA, ese dinero va a un fondo común. Si estás en una ISAPRE como Cruz Blanca, ese mismo 7% financia <strong>tu propio plan de salud</strong> con coberturas más amplias y acceso a clínicas privadas.</p>
+
+    <div class="intro-grid">
+      <div class="intro-box">
+        <h3>¿Cómo funciona Cruz Blanca?</h3>
+        <p>Cruz Blanca administra tu cotización del 7% y la convierte en un plan de salud personalizado. Puedes elegir el porcentaje de cobertura (desde 60% hasta 90%+), el tipo de red de atención (libre elección o preferente) y coberturas adicionales como dental, maternidad o catastrófico.</p>
+      </div>
+      <div class="intro-box accent">
+        <h3>¿Quién puede afiliarse?</h3>
+        <p>Cualquier trabajador dependiente o independiente puede afiliarse a Cruz Blanca. Si tu 7% no alcanza para el plan que quieres, puedes complementarlo con un pequeño aporte adicional. También puedes incluir a tu familia: cónyuge, hijos y otras cargas legales.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:40px">
+      <div class="sec-lbl">Comparativa</div>
+      <h2>FONASA vs ISAPRE Cruz Blanca</h2>
+      <div class="fonasa-vs">
+        <div class="fv-card fonasa">
+          <div class="fv-title">🏛 FONASA</div>
+          <ul class="fv-list">
+            <li>Fondo común del Estado</li>
+            <li>Libre para todos, sin preguntas</li>
+            <li>Red hospitalaria pública</li>
+            <li>Listas de espera variables</li>
+            <li>Atención clínica privada con bono (modalidad libre elección)</li>
+            <li>Buena opción para rentas bajas o quienes prefieren lo público</li>
+          </ul>
+        </div>
+        <div class="fv-card isapre">
+          <div class="fv-title">🏥 ISAPRE Cruz Blanca</div>
+          <ul class="fv-list">
+            <li>Plan propio con tu 7%</li>
+            <li>Coberturas desde 60% hasta 90%+</li>
+            <li>Acceso preferente a Clínicas Bupa e IntegraMédica</li>
+            <li>Sin listas de espera en red privada</li>
+            <li>Bono Costo Cero en exámenes</li>
+            <li>Dental, maternidad y catastrófico opcionales</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 2: TIPOS DE PLANES -->
+<section style="background:#F5F8FF">
+  <div class="container">
+    <div class="sec-lbl">Tipos de Planes</div>
+    <h2>¿Qué tipo de plan existe en Cruz Blanca?</h2>
+    <p class="sec-desc">Cruz Blanca ofrece distintas líneas de planes según tu presupuesto, tu red de atención preferida y el nivel de cobertura que necesitas. Aquí te explicamos las principales.</p>
+
+    <div class="tipos-grid">
+      <div class="tipo-card">
+        <div class="tipo-icon azul">🔓</div>
+        <div class="tipo-title">Libre Elección</div>
+        <p class="tipo-desc">Te atiendes en cualquier prestador con convenio Cruz Blanca a nivel nacional. Emites bono o solicitas reembolso. Máxima flexibilidad para elegir médico y clínica.</p>
+      </div>
+      <div class="tipo-card">
+        <div class="tipo-icon teal">🏥</div>
+        <div class="tipo-title">Cobertura Preferente</div>
+        <p class="tipo-desc">Incluye una red asociada (ej.: Bupa, IntegraMédica, Clínica UC) con copagos reducidos. Si te atiendes fuera de la red, igual tienes cobertura, pero menor.</p>
+      </div>
+      <div class="tipo-card">
+        <div class="tipo-icon azul">📱</div>
+        <div class="tipo-title">CruzBlanca On (Digital)</div>
+        <p class="tipo-desc">El primer plan de ISAPRE 100% online de Chile. Cobertura ambulatoria y de urgencia desde 60% hasta 80%, hospitalaria desde 70% hasta 100%, gestionado todo por app.</p>
+      </div>
+      <div class="tipo-card">
+        <div class="tipo-icon dorado">🎓</div>
+        <div class="tipo-title">Campus Bupa Max</div>
+        <p class="tipo-desc">Plan complementario cerrado con copago fijo en clínicas de la red hospitalaria según el plan contratado. Ideal para quienes buscan previsibilidad en sus gastos de salud.</p>
+      </div>
+      <div class="tipo-card">
+        <div class="tipo-icon teal">👨‍👩‍👧</div>
+        <div class="tipo-title">Planes Familiares</div>
+        <p class="tipo-desc">Incluye a tu cónyuge, hijos y otras cargas. Cruz Blanca ofrece coberturas diferenciadas por etapa de vida: maternidad, pediátrica, adulto mayor.</p>
+      </div>
+      <div class="tipo-card">
+        <div class="tipo-icon azul">🦷</div>
+        <div class="tipo-title">Productos Adicionales</div>
+        <p class="tipo-desc">Complementa tu plan base con cobertura dental ampliada (hasta 60% de descuento en IntegraMédica), urgencias con copago $0, Bono Costo Cero y asistencias Be Clever.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 3: PERFILES DE COBERTURA -->
+<section>
+  <div class="container">
+    <div class="sec-lbl">¿Qué nivel de cobertura necesitas?</div>
+    <h2>Encuentra tu perfil ideal</h2>
+    <p class="sec-desc">Cruz Blanca ofrece cientos de planes con distintos niveles de cobertura. Aquí te mostramos los tres perfiles más comunes según necesidad y presupuesto. Claudia analiza tu situación y te presenta <strong>las opciones reales que más te convienen</strong>, sin costo ni compromiso.</p>
+
+    <div class="perfiles-grid">
+
+      <!-- PERFIL 1: ESENCIAL -->
+      <div class="perfil-card">
+        <div class="perfil-head azul">
+          <span class="perfil-emoji">🌱</span>
+          <div class="perfil-nombre">Cobertura Esencial</div>
+          <div class="perfil-para">Para · Jóvenes · Independientes · Sin cargas</div>
+        </div>
+        <div class="perfil-body">
+          <div class="perfil-feature">Atención ambulatoria cubierta: consultas, exámenes e imagenología</div>
+          <div class="perfil-feature">Hospitalización cubierta: cirugías, pabellón, día cama</div>
+          <div class="perfil-feature">Acceso completo a red Cruz Blanca a nivel nacional</div>
+          <div class="perfil-feature">Cobertura GES (87 patologías) y CAEC garantizados por ley</div>
+          <div class="perfil-feature">Posibilidad de sumar dental o maternidad al plan base</div>
+          <div class="perfil-nota">💡 El precio se ajusta a tu cotización del 7%. Si sobra, queda como excedente a tu favor.</div>
+        </div>
+        <a href="https://wa.me/56998747180?text=Hola%20Claudia%2C%20me%20interesa%20una%20cobertura%20esencial%20en%20Cruz%20Blanca.%20Soy%20joven%20y%20sin%20cargas." target="_blank" class="btn-perfil">Quiero cotizar este perfil →</a>
+      </div>
+
+      <!-- PERFIL 2: EQUILIBRADO -->
+      <div class="perfil-card">
+        <div class="perfil-head teal">
+          <span class="perfil-emoji">⚖️</span>
+          <div class="perfil-nombre">Cobertura Equilibrada</div>
+          <div class="perfil-para">Para · Familias · Con cargas · Uso frecuente</div>
+        </div>
+        <div class="perfil-body">
+          <div class="perfil-feature">Mayor porcentaje de reembolso en consultas, laboratorio e imágenes</div>
+          <div class="perfil-feature">Cobertura hospitalaria ampliada: UCI, medicamentos, honorarios</div>
+          <div class="perfil-feature">Acceso preferente a Clínicas Bupa e IntegraMédica</div>
+          <div class="perfil-feature">Bono Costo Cero en exámenes en prestadores adheridos</div>
+          <div class="perfil-feature">Urgencias con copago preferente y dental con descuento</div>
+          <div class="perfil-nota">💡 El perfil más consultado por familias. Cubre bien lo cotidiano y protege ante imprevistos.</div>
+        </div>
+        <a href="https://wa.me/56998747180?text=Hola%20Claudia%2C%20busco%20una%20cobertura%20equilibrada%20en%20Cruz%20Blanca.%20Tengo%20familia%20y%20uso%20seguido%20la%20salud." target="_blank" class="btn-perfil">Quiero cotizar este perfil →</a>
+      </div>
+
+      <!-- PERFIL 3: COMPLETO -->
+      <div class="perfil-card">
+        <div class="perfil-head dorado">
+          <span class="perfil-emoji">🛡️</span>
+          <div class="perfil-nombre">Cobertura Completa</div>
+          <div class="perfil-para">Para · Mayor protección · Adultos mayores · Patologías</div>
+        </div>
+        <div class="perfil-body">
+          <div class="perfil-feature">Máximo porcentaje de cobertura en ambulatorio y hospitalización</div>
+          <div class="perfil-feature">Copago fijo o reducido en clínicas de la red hospitalaria Bupa</div>
+          <div class="perfil-feature">Urgencias con copago $0 para nuevos afiliados (período inicial)</div>
+          <div class="perfil-feature">Dental completo, maternidad y productos adicionales incluibles</div>
+          <div class="perfil-feature">Atención preventiva, salud mental y telemedicina con descuentos</div>
+          <div class="perfil-nota">💡 Recomendado para mayores de 40, adultos mayores o quienes tienen enfermedades crónicas.</div>
+        </div>
+        <a href="https://wa.me/56998747180?text=Hola%20Claudia%2C%20busco%20la%20cobertura%20m%C3%A1s%20completa%20en%20Cruz%20Blanca.%20Tengo%20m%C3%A1s%20de%2040%20a%C3%B1os." target="_blank" class="btn-perfil">Quiero cotizar este perfil →</a>
+      </div>
+
+    </div>
+
+    <div class="aviso">
+      <h4>ℹ️ ¿Por qué no publicamos precios?</h4>
+      <p>En ISAPRE el valor del plan <strong>no es fijo</strong>: depende de tu renta imponible, edad, sexo, número y perfil de tus cargas, y el plan específico que elijas dentro del catálogo de Cruz Blanca. Claudia revisa tu situación real y te presenta 2 o 3 opciones concretas con precio, cobertura y comparativa clara — sin letra chica.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 4: BENEFICIOS RED BUPA -->
+<section style="background:#F5F8FF">
+  <div class="container">
+    <div class="sec-lbl">Red Bupa · IntegraMédica</div>
+    <h2>Beneficios exclusivos por ser Cruz Blanca</h2>
+    <p class="sec-desc">Al afiliarte a Cruz Blanca accedes a la red del grupo Bupa en Chile, con clínicas, centros médicos y beneficios que no están disponibles en otras ISAPRE.</p>
+
+    <div class="beneficio-grid">
+      <div class="ben-card">
+        <div class="ben-title">🏥 Red Clínicas Bupa</div>
+        <p class="ben-desc">Cobertura mejorada en Clínica Bupa Santiago, Bupa Reñaca y Bupa Antofagasta. Acceso con copagos preferentes según tu plan.</p>
+      </div>
+      <div class="ben-card">
+        <div class="ben-title">🧪 Bono Costo Cero</div>
+        <p class="ben-desc">Exámenes de laboratorio e imagenología con copago $0 en prestadores adheridos a la red Cruz Blanca, según plan contratado.</p>
+      </div>
+      <div class="ben-card">
+        <div class="ben-title">🩺 IntegraMédica</div>
+        <p class="ben-desc">Atención en centros IntegraMédica a lo largo de Chile: consultas de especialidad, exámenes e imágenes con coberturas preferentes.</p>
+      </div>
+      <div class="ben-card">
+        <div class="ben-title">🦷 Dental con Descuento</div>
+        <p class="ben-desc">Hasta 60% de descuento en tratamientos dentales en IntegraMédica y UnoSalud. Cubre higiene, restauraciones, endodoncia, ortodoncia e implantes.</p>
+      </div>
+      <div class="ben-card">
+        <div class="ben-title">💊 Medicamentos</div>
+        <p class="ben-desc">Hasta 50% de descuento en medicamentos genéricos en farmacias adheridas. Tope de bonificación de $20.000 mensual (condiciones según plan).</p>
+      </div>
+      <div class="ben-card">
+        <div class="ben-title">🚑 Urgencias $0</div>
+        <p class="ben-desc">Nuevos afiliados obtienen 3 urgencias con copago $0 durante los primeros 6 meses en Clínicas Bupa (sujeto a condiciones del plan).</p>
+      </div>
+      <div class="ben-card">
+        <div class="ben-title">🌐 Atención 100% Digital</div>
+        <p class="ben-desc">Emite bonos, revisa reembolsos y gestiona licencias médicas desde Mi CruzBlanca web o app. Telemedicina disponible según plan.</p>
+      </div>
+      <div class="ben-card">
+        <div class="ben-title">🛡 Cobertura GES + CAEC</div>
+        <p class="ben-desc">Las 87 patologías GES garantizadas por ley. Cobertura Catastrófica (CAEC) para enfermedades de alto costo. Todo incluido en cualquier plan Cruz Blanca.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 5: CÓMO CONTRATAR -->
+<section>
+  <div class="container">
+    <div class="sec-lbl">Proceso</div>
+    <h2>¿Cómo afiliarse a Cruz Blanca?</h2>
+    <p class="sec-desc">Claudia te acompaña en cada paso. La afiliación es 100% digital y sin papeleo presencial.</p>
+
+    <div class="pasos">
+      <div class="paso">
+        <h4>Contacta a Claudia</h4>
+        <p>Escríbele por WhatsApp o correo. Ella te pide tu renta imponible, cargas y preferencias para armar opciones personalizadas.</p>
+      </div>
+      <div class="paso">
+        <h4>Recibe tu cotización</h4>
+        <p>Claudia te envía 2-3 alternativas de planes con el detalle de cobertura, precio mensual y comparativa clara. Sin letra chica.</p>
+      </div>
+      <div class="paso">
+        <h4>Elige tu plan</h4>
+        <p>Decides el plan que mejor se ajusta a tu presupuesto y necesidades. Claudia resuelve todas tus dudas antes de firmar.</p>
+      </div>
+      <div class="paso">
+        <h4>Afiliación digital</h4>
+        <p>El proceso de suscripción es 100% online. La póliza se emite en 24-72 horas y quedar inmediatamente cubierto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 6: FAQ -->
+<section style="background:#F5F8FF">
+  <div class="container">
+    <div class="sec-lbl">Preguntas frecuentes</div>
+    <h2>Lo que más nos preguntan</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">¿Cuánto cuesta un plan Cruz Blanca? <span class="faq-icon">+</span></div>
+        <div class="faq-a">El valor depende de tu renta imponible, edad, sexo y el plan que elijas. La base es tu cotización legal del 7%; si el plan cuesta más, pagas la diferencia. Claudia te cotiza gratis y sin compromiso, con opciones que se ajusten a lo que puedes destinar.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">¿Puedo incluir a mi familia? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Sí. Puedes incluir a tu cónyuge, hijos solteros y otras cargas legales. El costo del plan sube según el número y perfil de tus cargas, pero la cotización del 7% cubre a todo el grupo familiar.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">¿Hay períodos de carencia? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Depende del plan y de si vienes de otra ISAPRE o de FONASA. En general, los planes Cruz Blanca tienen carencias para algunas prestaciones (maternidad, preexistencias). Claudia te explica con detalle qué aplica según tu situación.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">¿Puedo cambiarme desde FONASA? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Sí, puedes cambiarte en cualquier momento del año. El cambio se efectúa al inicio del mes siguiente a tu afiliación. Solo necesitas no tener deudas pendientes y cumplir los requisitos del plan elegido.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">¿Qué pasa si me atienden fuera de la red? <span class="faq-icon">+</span></div>
+        <div class="faq-a">En planes de libre elección, puedes atenderte fuera de la red y solicitar reembolso según el arancel Fonasa. En planes preferentes, tienes cobertura en toda la red Cruz Blanca, pero el copago puede ser mayor fuera del prestador preferente.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">¿Qué es el Bono Costo Cero? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Es un beneficio exclusivo Cruz Blanca que permite realizar exámenes de laboratorio e imagenología con copago $0 en prestadores adheridos. Está sujeto al tope del plan contratado: si el tope del plan es igual o superior al valor del convenio, no pagas nada.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <div class="container">
+    <h2>¿Lista/o para cotizar tu plan ISAPRE?</h2>
+    <p>Claudia te asesora sin costo y sin compromiso. En menos de 24 horas tienes tu cotización personalizada en Cruz Blanca.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/56998747180?text=Hola%20Claudia%2C%20me%20interesa%20cotizar%20un%20plan%20ISAPRE%20Cruz%20Blanca" target="_blank" class="btn-wa">
+        <svg viewBox="0 0 24 24" style="width:19px;height:19px;fill:#fff;flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Cotizar por WhatsApp
+      </a>
+      <a href="mailto:claudia.fica@bupa.cl" class="btn-email">✉ claudia.fica@bupa.cl</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="fbot">
+      <img src="data:image/png;base64,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" alt="Cruz Blanca" style="height:28px;opacity:.55;filter:brightness(0) invert(1)">
+      <div class="fcopy">© 2025 Claudia Lucía Fica Acosta · Asesora Comercial Multiproducto · Bupa Seguros<br>Los planes mostrados son referenciales. Coberturas y precios definitivos sujetos a cotización individual.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleFaq(el){
+  const item = el.parentElement;
+  const wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+  if(!wasOpen) item.classList.add('open');
+}
+</script>
+
+</body>
+</html>
