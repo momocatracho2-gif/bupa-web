@@ -198,6 +198,26 @@ font-weight:800;font-size:1rem;letter-spacing:.2px;
 box-shadow:0 6px 18px rgba(0,0,0,.18)
 }
 
+
+/* Fix fotos index */
+.pyme-card img,
+.card img,
+.plan-card img{
+  object-fit:cover !important;
+  object-position:center center !important;
+}
+
+.pyme-card .card-img,
+.plan-card .card-img,
+.card-image{
+  overflow:hidden !important;
+}
+
+img[alt*="niño"], img[alt*="famil"], img[src*="child"], img[src*="family"]{
+  object-fit:cover !important;
+  object-position:center center !important;
+}
+
 </style>
 </head>
 <body>
